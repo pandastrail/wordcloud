@@ -23,13 +23,13 @@ The [tdqm](https://github.com/noamraph/tqdm) is used to monitor the iterables, s
 The site to parse (or scrap) is:
 * https://www.jobs.ch 
 
-and the url for a given search looks like:
+The url for a given search looks like:
 * https://www.jobs.ch/de/stellenangebote/?location=Zuerich&page=1&term=Python 
 
 Inside the results page, the link for an individual position is something like:
 * https://www.jobs.ch/de/stellenangebote/detail/8397438/
 
-So for any given time, giving a keyword or term to search and a location, a list of link to retrieve the text can be automatically generated. At this point I have tried the code with one term only. The locate can also be blank and the search will give everything for the term given. I have tested the code for 10 pages, with 20 results per page, gives 200 positions parsed. This works so far very well, giving that there more than 200 positions for the term given.
+So for any given time, giving a keyword or term to search, and a location, a list of links to retrieve the text can be automatically generated. At this point I have tried the code with one term only. The location can also be blank and the search will just give everything for the term given, without filtering a location. I have tested the code for 10 pages, with 20 results per page, gives 200 open job positions parsed. This works so far very well, giving that there are more than 200 positions for the term given.
 
 ## Sauce & Soup
 After building the beautifulsoup object based on the requested page it was just a matter of finding the link at the class:
