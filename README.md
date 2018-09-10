@@ -20,4 +20,11 @@ from tqdm import tqdm
 Will need to put this on a requirements.txt file later. [tdqm](https://github.com/noamraph/tqdm) is used to monitor the iterables, specially useful at the beginnig, when trying to understand the eficiency of the approach. [wordcloud](https://github.com/amueller/word_cloud) is a bit of a black-box at this point for me, but it seems reliable and for the sake of speed will be used to quickly visualize the data. 
 
 ## Website
-The site to parse is https://www.jobs.ch and the url for a given search looks like https://www.jobs.ch/de/stellenangebote/?location=Zuerich&page=1&term=Python. Inside the results page, the link for an individual position is something like https://www.jobs.ch/de/stellenangebote/detail/8397438/
+The site to parse is:
+* https://www.jobs.ch 
+
+and the url for a given search looks like:
+* https://www.jobs.ch/de/stellenangebote/?location=Zuerich&page=1&term=Python 
+
+Inside the results page, the link for an individual position is something like:
+* https://www.jobs.ch/de/stellenangebote/detail/8397438/
