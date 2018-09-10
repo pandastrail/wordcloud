@@ -49,10 +49,10 @@ Interesting enough a very simple regular expression was need to retrieve the tex
 re.findall(r'kopieren.*Jobs —'
 ```
 
-Meaning that everything between the word *"kopieren"* (which most likely will not be present in a job description) and the *hyphen* gives us the actual text of the job description. This assumption seems to be correct for all of the runs performed, however, it should be used carefully as it is infered from looking superficially at the CSS style of the page.
+Meaning that everything between the word *"kopieren."* (which most likely will not be present in a job description) and the *Jobs -* gives us the actual text of the job description. This assumption seems to be correct for all of the runs performed, however, it should be used carefully as it is infered from looking superficially at the CSS style of the page.
 
 ## Stopwords
-As usual, stopwords need to be eliminated before creating the wordcloud. The file [stopwords_de_plain.txt](https://github.com/pandastrail/wordcloud/blob/master/stopwords_de_plain.txt) has a small set of german and english words that seems to catch most words. Inside the wordcloud API an additional set of stopwords were defined, adjusted on the fly, as I was plotting the different terms.
+As usual, stopwords need to be eliminated before creating the wordcloud. The file [stopwords_de_plain.txt](https://github.com/pandastrail/wordcloud/blob/master/stopwords_de_plain.txt) has a small set of german and english words that seems to catch most "unvaluable" words. Inside the wordcloud API an additional set of stopwords were defined, adjusted on the fly, as I was plotting the different terms.
 
 ## Code
 See the [notebook](https://github.com/pandastrail/wordcloud/blob/master/wordcloud.ipynb)
