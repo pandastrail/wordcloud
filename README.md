@@ -47,7 +47,7 @@ As usual, stopwords need to be eliminated before creating the wordcloud. The fil
 See the [notebook](https://github.com/pandastrail/wordcloud/blob/master/wordcloud.ipynb)
 
 ## Visualization
-After playing around with several different keywords or search terms, here are four interesting results, leaving the location blank and pasring the first 200 open positions found:
+After playing around with several different keywords or search terms, here are a few interesting results, leaving the location blank and pasring the first 200 open positions found:
 
 ### Data Scientist
 ![Data Scientist](https://github.com/pandastrail/wordcloud/blob/master/data%2Bscientist.png "wordcloud for term data+scientist")
