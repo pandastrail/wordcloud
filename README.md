@@ -58,7 +58,7 @@ As usual, stopwords need to be eliminated before creating the wordcloud. The fil
 See the [notebook](https://github.com/pandastrail/wordcloud/blob/master/wordcloud.ipynb)
 
 ## Visualization
-After playing around with several different keywords or search terms, here are a few interesting results, leaving the location blank and pasring the first 200 open positions found:
+After playing around with several different keywords or search terms, here are a few interesting results, leaving the location blank and parsing the first 200 open positions found:
 
 ### Python
 ![python](https://github.com/pandastrail/wordcloud/blob/master/python.png "wordcloud for term python")
