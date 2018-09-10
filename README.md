@@ -28,3 +28,15 @@ and the url for a given search looks like:
 
 Inside the results page, the link for an individual position is something like:
 * https://www.jobs.ch/de/stellenangebote/detail/8397438/
+
+So for any given time, giving a keyword or term to search and a location, a list of link to retrieve the text can be automatically generated. At this point I have tried the code with one term only. The locate can also be blank and the search will give everything for the term given. I have tested the code for 10 pages, with 20 results per page, gives 200 positions parsed. This works so far very well, giving that there more than 200 positions for the term given.
+
+## Stopwords
+As usual, stopwords need to be eliminated before creating the wordcloud. The file [stopwords_de_plain.txt](https://) has a small set of german and english words that seems to catch most words. Inside the wordcloud API an additional set of stopwords were defined, adjusted on the fly, as I was plotting the different terms.
+
+## Code
+See the [notebook]()
+
+## Visualization
+After playing around with several different keywords or search terms, here are four interesting results:
+
