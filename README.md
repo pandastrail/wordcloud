@@ -73,4 +73,4 @@ After playing around with several different keywords or search terms, here are a
 ![Verkauf](https://github.com/pandastrail/wordcloud/blob/master/verkauf.png "wordcloud for term verkauf")
 
 ### Biology
-![Biology](https://github.com/pandastrail/wordcloud/blob/master/biology.png "wordcloud for term biology")
+![Biology](https://github.com/pandastrail/wordcloud/blob/master/biology_rev.png "wordcloud for term biology")
