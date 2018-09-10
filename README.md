@@ -41,5 +41,5 @@ See the [notebook]()
 After playing around with several different keywords or search terms, here are four interesting results:
 
 ### Data Scientist
-![alt text](https://github.com/pandastrail/wordcloud/blob/master/data%2Bscientist.png "Logo Title Text 1")
+![Data Scientist](https://github.com/pandastrail/wordcloud/blob/master/data%2Bscientist.png "wordcloud for Data Scientist")
 
