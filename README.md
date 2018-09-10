@@ -35,7 +35,7 @@ So for any given time, giving a keyword or term to search and a location, a list
 As usual, stopwords need to be eliminated before creating the wordcloud. The file [stopwords_de_plain.txt](https://github.com/pandastrail/wordcloud/blob/master/stopwords_de_plain.txt) has a small set of german and english words that seems to catch most words. Inside the wordcloud API an additional set of stopwords were defined, adjusted on the fly, as I was plotting the different terms.
 
 ## Code
-See the [notebook]()
+See the [notebook](https://github.com/pandastrail/wordcloud/blob/master/wordcloud.ipynb)
 
 ## Visualization
 After playing around with several different keywords or search terms, here are four interesting results, leaving the location blank and pasring the first 200 open positions found:
