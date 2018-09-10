@@ -38,12 +38,13 @@ As usual, stopwords need to be eliminated before creating the wordcloud. The fil
 See the [notebook]()
 
 ## Visualization
-After playing around with several different keywords or search terms, here are four interesting results:
+After playing around with several different keywords or search terms, here are four interesting results, leaving the location blank and pasring the first 200 open positions found:
 
 ### Data Scientist
-![Data Scientist](https://github.com/pandastrail/wordcloud/blob/master/data%2Bscientist.png "wordcloud for Data Scientist")
+![Data Scientist](https://github.com/pandastrail/wordcloud/blob/master/data%2Bscientist.png "wordcloud for term data+scientist")
 
 ### Schreiner (carpenter)
-![Schreiner](https://github.com/pandastrail/wordcloud/blob/master/schreiner.png "wordcloud for Schreiner")
+![Schreiner](https://github.com/pandastrail/wordcloud/blob/master/schreiner.png "wordcloud for term schreiner")
 
-
+### Verkauf (sales)
+![Verkauf](https://github.com/pandastrail/wordcloud/blob/master/verkauf.png "wordcloud for term verkauf")
