@@ -31,6 +31,17 @@ Inside the results page, the link for an individual position is something like:
 
 So for any given time, giving a keyword or term to search and a location, a list of link to retrieve the text can be automatically generated. At this point I have tried the code with one term only. The locate can also be blank and the search will give everything for the term given. I have tested the code for 10 pages, with 20 results per page, gives 200 positions parsed. This works so far very well, giving that there more than 200 positions for the term given.
 
+## Sauce & Soup
+After building the beautifulsoup object based on the requested page it was just a matter of finding the link at the class:
+
+```python
+sauce = urllib.request.urlopen(url).read()
+soup = bs.BeautifulSoup(sauce, 'lxml')
+    
+for link in soup.find_all('a'):
+    pos = link.get('href')
+```
+
 ## Regex
 Interesting enough a very simple regular expression was need to retrieve the text that was relevant to the position, and ignore all the back-end stuff:
 
