@@ -31,6 +31,15 @@ Inside the results page, the link for an individual position is something like:
 
 So for any given time, giving a keyword or term to search and a location, a list of link to retrieve the text can be automatically generated. At this point I have tried the code with one term only. The locate can also be blank and the search will give everything for the term given. I have tested the code for 10 pages, with 20 results per page, gives 200 positions parsed. This works so far very well, giving that there more than 200 positions for the term given.
 
+## Regex
+Interesting enough a very simple regular expression was need to retrieve the text that was relevant to the position, and ignore all the back-end stuff:
+
+```python
+re.findall(r'kopieren.*Jobs —'
+```
+
+Meaning that everything between the word *kopieren* (which will most likely not be present in a job description) and the hyphen gives us the actual text on the job description. This assumption seems to be correct for all of the runs performed, however, it is just infered from looking superficially at the CSS style of the page.
+
 ## Stopwords
 As usual, stopwords need to be eliminated before creating the wordcloud. The file [stopwords_de_plain.txt](https://github.com/pandastrail/wordcloud/blob/master/stopwords_de_plain.txt) has a small set of german and english words that seems to catch most words. Inside the wordcloud API an additional set of stopwords were defined, adjusted on the fly, as I was plotting the different terms.
 
