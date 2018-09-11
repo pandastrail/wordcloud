@@ -69,6 +69,9 @@ After playing around with several different keywords or search terms, here are a
 ### Schreiner (carpenter)
 ![Schreiner](https://github.com/pandastrail/wordcloud/blob/master/schreiner.png "wordcloud for term schreiner")
 
+### PhD
+![PhD](https://github.com/pandastrail/wordcloud/blob/master/phd.png "wordcloud for term phd")
+
 ### Verkauf (sales)
 ![Verkauf](https://github.com/pandastrail/wordcloud/blob/master/verkauf.png "wordcloud for term verkauf")
 
