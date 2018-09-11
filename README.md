@@ -1,10 +1,10 @@
 # wordcloud
-A WordCloud from a JobCloud, or a very short project on Web Scraping, Regular Expression and Data Visualization.
+A WordCloud from a JobCloud, or a very short exercise on Web Scraping, Regular Expressions and Data Visualization.
 
 ## Description
-When looking for open job positions, the online source to go is the website [jobs.ch](https://www.jobs.ch/de/) in the german part of Switzerland. To play a bit with web scraping, text parsing and data visualization I wanted to create a wordcloud from the text in the open job positions that were found giving a keyword on the search field of the website. 
+When looking for open job positions, the online source to go in the german part of Switzerland is the website [jobs.ch](https://www.jobs.ch/de/). To play a bit with web scraping, text parsing and data visualization I wanted to create a wordcloud based on the text in open job positions that were found giving a keyword on the search field of the website. 
 
-After looking at the HTML and CSS elements using the amazing Chrome inspector I found really quick where were the links needed to parse and retrieve the relevant text. That usually reflects a well structured website, easy to inspect and debug. After writing down a simple strategy it was just a matter of setting up the loops and transforming strings. 
+After looking at the HTML and CSS elements using the amazing [Chrome Inspector](https://developers.google.com/web/tools/chrome-devtools/) I found really quick where were the links needed to parse and retrieve the relevant text. That usually reflects a well structured website, easy to inspect and debug. After writing down a simple strategy it was just a matter of setting up the loops and transforming the strings. 
 
 ## Requirements
 Everything is done with the well-known Python modules [requests](https://docs.python.org/3/library/urllib.request.html), [beutifulsoup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/), [regex](https://docs.python.org/3/library/re.html), [wordcloud](https://github.com/amueller/word_cloud) and [matplotlib](https://matplotlib.org/), inside a [Jupyter Lab notebook](https://github.com/jupyterlab/jupyterlab). 
@@ -32,7 +32,7 @@ Inside the results page, the link for an individual position is something like:
 So for any given time, giving a keyword or term to search, and a location, a list of links to retrieve the text can be automatically generated. At this point I have tried the code with one term only. The location can also be blank and the search will just give everything for the term given, without filtering a location. I have tested the code for 10 pages, with 20 results per page, gives 200 open job positions parsed. This works so far very well, giving that there are more than 200 positions for the term given.
 
 ## Sauce & Soup
-After building the beautifulsoup object based on the requested page it was just a matter of finding the link at the class:
+After building the beautifulsoup object based on the requested page we search for the link at the class:
 
 ```python
 sauce = urllib.request.urlopen(url).read()
@@ -77,3 +77,7 @@ After playing around with several different keywords or search terms, here are a
 
 ### Biology
 ![Biology](https://github.com/pandastrail/wordcloud/blob/master/biology_rev.png "wordcloud for term biology")
+
+## Limitations & Improvements
+* If the HTML or CSS structure changes then our parsing will probably won't work anymore. If that is the case we can catch the error very quickly and tweak the code accodringly.
+* The code works well with 200 end links. One improvement will be to identify how many positions were found in total and incorporate that variable into the loop to retrieve the text for all the positions. For loose search terms that could lead to 1000 results, these could potentially be a challenge to the network and to the computing times.
