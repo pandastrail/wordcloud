@@ -79,5 +79,5 @@ After playing around with several different keywords or search terms, here are a
 ![Biology](https://github.com/pandastrail/wordcloud/blob/master/biology_rev.png "wordcloud for term biology")
 
 ## Limitations & Improvements
-* If the HTML or CSS structure changes then our parsing will probably won't work anymore. If that is the case we can catch the error very quickly and tweak the code accodringly.
-* The code works well with 200 end links. One improvement will be to identify how many positions were found in total and incorporate that variable into the loop to retrieve the text for all the positions. For loose search terms that could lead to 1000 results, these could potentially be a challenge to the network and to the computing times.
+* If the HTML or CSS structure changes then our parsing will probably won't work anymore. If that is the case we can catch the error very quickly and tweak the code accorrdingly.
+* The code works well with 200 end-links. One improvement will be to identify how many positions were found in total and incorporate that variable into the loop to retrieve the text for all of the positions. Loose search terms could lead easily to +1000 results, that could potentially be a challenge to the network and to the computing performance.
