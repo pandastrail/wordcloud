@@ -7,7 +7,7 @@ When looking for open job positions, the online source to go in the german part 
 After looking at the HTML and CSS elements using the amazing [Chrome Inspector](https://developers.google.com/web/tools/chrome-devtools/) I found really quick where were the links needed to parse and retrieve the relevant text. That usually reflects a well structured website, easy to inspect and debug. After writing down a simple strategy it was just a matter of setting up the loops and transforming the strings. 
 
 ## Requirements
-Everything is done with the well-known Python modules [requests](https://docs.python.org/3/library/urllib.request.html), [beutifulsoup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/), [regex](https://docs.python.org/3/library/re.html), [wordcloud](https://github.com/amueller/word_cloud) and [matplotlib](https://matplotlib.org/), inside a [Jupyter Lab notebook](https://github.com/jupyterlab/jupyterlab). 
+Everything is done with the well-known Python modules [requests](https://docs.python.org/3/library/urllib.request.html), [beautifulsoup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/), [regex](https://docs.python.org/3/library/re.html), [wordcloud](https://github.com/amueller/word_cloud) and [matplotlib](https://matplotlib.org/), inside a [Jupyter Lab notebook](https://github.com/jupyterlab/jupyterlab). 
 
 ```python
 import bs4 as bs
